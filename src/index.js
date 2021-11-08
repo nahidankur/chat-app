@@ -15,7 +15,7 @@ app.use(express.static(publicDirectoryPath))
 io.on('connection', (socket) => {
     console.log('New WebSocket Connection')
 
-    socket.emit('message', 'Welcome!')
+    socket.emit('message', 'Welcome To The Chat App - Developed By Ankur & Mithil !')
 
     socket.on('sendMessage', (message) => {
         io.emit('message', message)
